@@ -3801,7 +3801,7 @@ end)
 
  
 --------------------------------------------------------------------
-local Library = Update:Window("t7gfy-YT ","")
+local Library = Update:Window("Saif El Hacker ","")
 ------------------------------------------
 
 spawn(function()
@@ -5803,7 +5803,7 @@ local NotificationHolder = loadstring(game:HttpGet("https://raw.githubuserconten
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 wait(1)
 Notification:Notify(
-   {Title = "t7gfy hub ", Description = "You Have Max Observation"},
+   {Title = "Saif El Hacker ", Description = "You Have Max Observation"},
    {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "option"},
    {Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(255, 84, 84), Callback = function(State) print(tostring(State)) end}
 )
