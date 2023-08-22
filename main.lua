@@ -278,7 +278,7 @@ CreateSupportList({"Pet Simulator X","GPO - Grand Piece Online","Blox Fruit","Ki
 	"Murder Mystery 2","steve's one piece","Anime Fighters Simulator","Tradelands","Dungeon Quest","Two Piece"
 })
 _G.HoHoLoaded = true
-if listPre[game.GameId] ~= nil then
+if not getgenv().env and listPre[game.GameId] ~= nil then
 	getgenv().messagebox = function()end
 	loadstring(listPre[tonumber(game.GameId)])()
 else
