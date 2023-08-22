@@ -281,7 +281,7 @@ _G.HoHoLoaded = true
 if listPre[game.GameId] ~= nil then
 	--getgenv().messagebox = function()end
 	--loadstring(listPre[tonumber(game.GameId)])()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/main/hohotest-obfuscated.lua'))()
+    --loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/main/hohotest-obfuscated.lua'))()
 else
 	game.Players.LocalPlayer:Kick("game not support, discord.gg/hohohub")
 end
