@@ -868,7 +868,7 @@ local listPre = {
 	[4098816381]="loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/Pre/AnimeSoulSimulatorPre.lua', true))()",
 }
 
-MakePrGui()
+--  MakePrGui()
 --ttytPr()
 CreateSupportList({"Pet Simulator X","GPO - Grand Piece Online","Blox Fruit","King Legacy","Anime Soul Simulator","Anime Defense Simulator","Ro Fruit","Collect All Pets","Tower of Hell","Break In","Arsenal",
 "Mad City","Viet Nam Piece","Field Trip Z","Giant Survival!",
@@ -886,7 +886,7 @@ end
 
 if _G["HoHo Hub Auto Bounty V3"] or _G["Fumo Blox Fruit - HoHo Hub Kaitun V3"] then return end
 
-local path = "loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/main/ScriptLoad.lua'))()"
+local path = "loadstring(game:HttpGet('https://raw.githubusercontent.com/LebronJack69/RobluxScriptTesing/main/main.lua'))()"
 if getgenv().Key then
 	path = "getgenv().Key = '"..getgenv().Key.."'\n"..path
 end
