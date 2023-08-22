@@ -1,0 +1,1 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LebronJack69/RobluxScriptTesing/main/main.lua"))()
