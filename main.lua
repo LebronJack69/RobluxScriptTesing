@@ -868,16 +868,18 @@ local listPre = {
 	[4098816381]="loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HohoV2/Pre/AnimeSoulSimulatorPre.lua', true))()",
 }
 
---MakePrGui()
-ttytPr()
+MakePrGui()
+--ttytPr()
 CreateSupportList({"Pet Simulator X","GPO - Grand Piece Online","Blox Fruit","King Legacy","Anime Soul Simulator","Anime Defense Simulator","Ro Fruit","Collect All Pets","Tower of Hell","Break In","Arsenal",
 "Mad City","Viet Nam Piece","Field Trip Z","Giant Survival!",
 	"Murder Mystery 2","steve's one piece","Anime Fighters Simulator","Tradelands","Dungeon Quest","Two Piece"
 })
 _G.HoHoLoaded = true
-if not getgenv().Key and listPre[game.GameId] ~= nil then
+if getgenv().Key and listPre[game.GameId] ~= nil then
 	getgenv().messagebox = function()end
 	loadstring(listPre[tonumber(game.GameId)])()
+elseif not getgenv().Key and list[game.GameId] ~= nil then
+	loadstring(list[tonumber(game.GameId)])()
 else
 	game.Players.LocalPlayer:Kick("game not support, discord.gg/hohohub")
 end
@@ -890,4 +892,3 @@ if getgenv().Key then
 end
 local queueteleport = syn and syn.queue_on_teleport or queue_on_teleport or fluxus and fluxus.queue_on_teleport
 queueteleport(path)
-print("Hello Saif")
