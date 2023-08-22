@@ -5654,13 +5654,11 @@ end)
 Main:Seperator(" Mirage Island ")
 
 Main:Toggle("Auto Mirage Island",false,function(value)
- if game:GetService("Workspace").Map:FindFirstChild("MysticIsland") then
-                           topos(game:GetService("Workspace").Map:FindFirstChild("MysticIsland").HumanoidRootPart.CFrame * CFrame.new(0,500,-100))
-                    else
-if _G.Mystichop then
-hop()
-end
-end
+ 	if game:GetService("Workspace").Map:FindFirstChild("MysticIsland") then
+    	topos(game:GetService("Workspace").Map:FindFirstChild("MysticIsland").HumanoidRootPart.CFrame * CFrame.new(0,500,-100))
+	else
+		hop()
+	end
 end)
 
 Main:Toggle("Auto Mirage Island Hop",false,function(value)
